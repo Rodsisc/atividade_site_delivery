@@ -1,0 +1,274 @@
+body{
+    margin: 0px;
+}
+
+#corpo_da_pagina{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'contato'
+    'footer'
+    ;
+}
+
+/*------------------------------------------------------------------------------------------*/
+
+/*Inicio do header*/
+
+#header{
+    grid-area: header;    
+    background-color: #E4E2DD;
+    display: flex;
+    justify-content: space-between;
+}
+.caixa_itens_navbar{
+    background-color: black;
+    border-radius: 100px;
+    color: white;
+    width: 120px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-family:  Cairo, sans-serif;
+    margin-right: 100px;
+}
+#nav-bar{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#bussula{
+    margin-right: 10px;
+}
+a{
+    color: white;  
+  }
+  a:visited{
+      color: white;
+  }
+
+/* Fim do header */
+
+/*------------------------------------------------------------------------------------------*/
+
+/* Início da parte de contato */
+
+#container_contato{
+    width: 100%;
+    height: 1400px;
+    display: grid;
+    grid-template-areas: 
+    'redes_sociais entre_em_contato'
+    'redes_sociais entre_em_contato'
+    'vazio_contato vazio_contato'
+    ;
+    background-image: url(Contato.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Localização */
+
+#localizacao_redes_contato{
+    grid-area: redes_sociais;
+}
+#entre_em_contato{
+    grid-area: entre_em_contato;
+}
+#vazio_contato{
+    grid-area: vazio_contato;
+}
+
+
+#caixa_localizacao{
+    margin-top: 230px;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 400px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#p_localizacao{
+    font-size: 48px;
+    font-family: Cairo, sans-serif;
+}
+#p_endereco_num{
+    font-size: 24px;
+    font-family: Cairo, sans-serif;
+    text-align: center;
+}
+
+
+
+/* Redes Sociais */
+#redes_sociais{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#siga-nos_contato{
+    font-size: 36px;
+    font-family: Cairo, sans-serif;
+}
+#lista_redes_sociais_contato{
+    list-style: none;
+    display: flex;
+    margin-top: 50px;
+}
+#icone_facebook{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(80, 80, 167);
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding-right: 7px;
+    padding-bottom: 5px;
+}
+#icone_twitter{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(97, 179, 255);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.espacamento_icones_sociais{
+    margin-right: 25px;
+}
+
+/* Mensagem */
+#entre_em_contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#txt_entre_em_contato{
+    margin-top: 250px;
+    font-size: 48px;
+    font-family: Cairo, sans-serif;
+    color: white;
+}
+.espacamento_inputs_contato{
+    margin-bottom: 55px;
+}
+#nome_contato{
+    width: 550px;
+    height: 50px;
+    background-color: #D9D9D9;
+}
+#email_contato{
+    width: 550px;
+    height: 50px;
+    background-color: #D9D9D9;
+}
+#mensagem_contato{
+    width: 550px;
+    height: 150px;
+    background-color: #D9D9D9;
+}
+#btn_enviar_contato{
+    width: 150px;
+    height: 60px;
+    font-size: 18px;
+    background-color: #EED493;
+    border: none;
+}
+
+/* Fim da parte de contato */
+
+/*------------------------------------------------------------------------------------------*/
+
+/* Início do footer */
+
+
+#footer{
+    height: 220px;
+    grid-area: footer;
+    background-color: #494949;
+    display: grid;
+    grid-template-areas: 
+    'vazio_footer01 footer_esquerdo footer_meio footer_direito vazio_footer02'
+    ;
+}
+#footer_esquerdo{
+    grid-area: footer_esquerdo;
+    display: flex;
+    justify-content: end;
+}
+#footer_direito{
+    grid-area: footer_direito;
+    display: flex;
+    justify-content: start;
+}
+#footer_meio{
+    grid-area: footer_meio;
+    display: flex;
+    justify-content: center;
+}
+#vazio_footer01{
+    grid-area: vazio_footer01;
+    
+}
+#vazio_footer02{
+    grid-area: vazio_footer02;
+}
+
+.lista_footer{
+    font-family: Cairo, sans-serif;
+    font-size: 16px;
+    list-style: none;
+    padding: 0px;
+}
+
+/* Horários */
+#horarios{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+#Hfuncionamento{
+    color: rgb(177, 177, 177);
+}
+.espacamento_horarios{
+    margin-bottom: 5px;
+}
+
+/* Endereço */
+#lista_endereco{
+    color: white;
+    font-size: 16px;
+    font-family: Cairo, sans-serif;
+}
+.espacamento_endereco{
+    margin-top: 15px;
+}
+
+/* Contatos */
+#lista_contatos{
+    color: white;
+    font-size: 19px;
+    font-family: Cairo, sans-serif;
+}
+#lista_redes_sociais{
+    display: flex;
+    padding: 0px;
+}
+.espacamento_contato{
+    margin-right: 20px;
+    list-style: none;
+}
+#espacamento_contato{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}

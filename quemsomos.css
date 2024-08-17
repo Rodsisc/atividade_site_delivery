@@ -1,0 +1,234 @@
+body{
+    margin: 0px;
+    font-family: Cairo, sans-serif;
+}
+
+#container_quemsomos{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'about'
+    'footer'
+    ;
+}
+
+/*Inicio do header*/
+/*------------------------------------------------------------------------------------------*/
+#header{
+    grid-area: header;    
+    background-color: #E4E2DD;
+    display: flex;
+    justify-content: space-between;
+}
+.caixa_itens_navbar{
+    background-color: black;
+    border-radius: 100px;
+    color: white;
+    width: 120px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-family:  Cairo, sans-serif;
+    margin-right: 100px;
+}
+#nav-bar{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#bussula{
+    margin-right: 10px;
+}
+a{
+  color: white;  
+}
+a:visited{
+    color: white;
+}
+
+/* Fim do header */
+
+/*------------------------------------------------------------------------------------------*/
+
+/* Inicio do quem somos */
+
+
+/* Sobre nos */
+#about_us{
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 350px;
+    text-align: center;
+}
+#sobre{
+    margin-top: 140px;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+#txt_sobre{
+    font-size: 24px;
+}
+
+
+
+
+#integrantes{
+    width: 100%;
+    height: 300px;
+    font-size: 24px;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+
+
+
+/* Perfis */
+#criadores{
+    width: 100%;
+    height: 1150px;
+    color: white;
+    background-color: black;
+    display: grid;
+    grid-template-areas: 
+    'perfil curriculo'
+    ;
+}
+#perfis{
+    grid-area: perfil;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#curriculos{
+    grid-area: curriculo;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+
+.estrutura_perfil{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.img_perfil{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 1px solid gray;
+    background-image: url(person_3.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 30px;
+}
+.nome_perfil{
+    font-size: 24px;
+}
+
+.txt_curriculo{
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Fim do quem somos */
+
+/*------------------------------------------------------------------------------------------*/
+
+/* Início do footer */
+
+
+#footer{
+    height: 220px;
+    grid-area: footer;
+    background-color: #494949;
+    display: grid;
+    grid-template-areas: 
+    'vazio_footer01 footer_esquerdo footer_meio footer_direito vazio_footer02'
+    ;
+}
+#footer_esquerdo{
+    grid-area: footer_esquerdo;
+    display: flex;
+    justify-content: end;
+}
+#footer_direito{
+    grid-area: footer_direito;
+    display: flex;
+    justify-content: start;
+}
+#footer_meio{
+    grid-area: footer_meio;
+    display: flex;
+    justify-content: center;
+}
+#vazio_footer01{
+    grid-area: vazio_footer01;
+    
+}
+#vazio_footer02{
+    grid-area: vazio_footer02;
+}
+
+.lista_footer{
+    font-family: Cairo, sans-serif;
+    font-size: 16px;
+    list-style: none;
+    padding: 0px;
+}
+
+/* Horários */
+#horarios{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+#Hfuncionamento{
+    color: rgb(177, 177, 177);
+}
+.espacamento_horarios{
+    margin-bottom: 5px;
+}
+
+/* Endereço */
+#lista_endereco{
+    color: white;
+    font-size: 16px;
+    font-family: Cairo, sans-serif;
+}
+.espacamento_endereco{
+    margin-top: 15px;
+}
+
+/* Contatos */
+#lista_contatos{
+    color: white;
+    font-size: 19px;
+    font-family: Cairo, sans-serif;
+}
+#lista_redes_sociais{
+    display: flex;
+    padding: 0px;
+}
+.espacamento_contato{
+    margin-right: 20px;
+    list-style: none;
+}
+#espacamento_contato{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}

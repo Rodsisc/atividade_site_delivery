@@ -1,0 +1,236 @@
+body{
+    margin: 0px;
+}
+
+#corpo_da_pagina{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'bem_vindo'
+    'opcoes'
+    'footer'
+    ;
+}
+
+/*Inicio do header*/
+/*------------------------------------------------------------------------------------------*/
+#header{
+    grid-area: header;    
+    background-color: #E4E2DD;
+    display: flex;
+    justify-content: space-between;
+}
+.caixa_itens_navbar{
+    background-color: black;
+    border-radius: 100px;
+    color: white;
+    width: 120px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-family:  Cairo, sans-serif;
+    margin-right: 100px;
+}
+#nav-bar{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#bussula{
+    margin-right: 10px;
+}
+a{
+    color: white;  
+  }
+  a:visited{
+      color: white;
+  }
+
+/*------------------------------------------------------*/
+
+
+#bem_vindo{
+    grid-area: bem_vindo;
+    border: 1px solid black;
+    background-image: url(istockphoto-2032134580-170667a\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 360px;
+    background-repeat: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#seja_bem_vindo{
+    font-size: 36px;
+    font-family: Cairo, sans-serif;
+    color: white;
+}
+
+
+/*------------------------------------------------------*/
+
+
+#opcoes{
+    grid-area: opcoes;
+    background-color: #121212;
+    display: grid;
+    grid-template-areas: 
+    'oq_deseja oq_deseja'
+    'l1 l1'
+    'l2_01 l2_02'
+    ;
+}
+#oq_deseja{
+    grid-area: oq_deseja;
+    height: 100px;
+    color: white;
+    font-size: 24px;
+    font-family: Cairo, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+#l1{
+    grid-area: l1;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.caixa_imagem_opcoes{
+    width: 280px;
+    height: 280px;
+    border: 1px solid gray;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 18px;
+    font-family: Cairo, sans-serif;
+}
+#img_hamburguer_opcoes{
+    background-image: url(Hamburgueres.png);
+}
+#img_porcoes_opcoes{
+    background-image: url(Porções.png);
+}
+#img_bebidas_opcoes{
+    background-image: url(Bebidas.png);
+}
+#img_combos_opcoes{
+    background-image: url(Combos.png);
+}
+#img_sobremesas_opcoes{
+    background-image: url(Sobremesas.png);
+}
+
+
+#l2_01{
+    height: 500px;
+    grid-area: l2_01;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    padding-right: 132px;
+    padding-top: 50px;
+}
+#l2_02{
+    grid-area: l2_02;
+    padding-left: 132px;
+    padding-top: 50px;
+}
+
+/*------------------------------------------------------*/
+
+
+
+
+#footer{
+    height: 220px;
+    grid-area: footer;
+    border: 1px solid black;
+    background-color: #494949;
+    display: grid;
+    grid-template-areas: 
+    'vazio_footer01 footer_esquerdo footer_meio footer_direito vazio_footer02'
+    ;
+}
+#footer_esquerdo{
+    grid-area: footer_esquerdo;
+    display: flex;
+    justify-content: end;
+}
+#footer_direito{
+    grid-area: footer_direito;
+    display: flex;
+    justify-content: start;
+}
+#footer_meio{
+    grid-area: footer_meio;
+    display: flex;
+    justify-content: center;
+}
+#vazio_footer01{
+    grid-area: vazio_footer01;
+    
+}
+#vazio_footer02{
+    grid-area: vazio_footer02;
+}
+
+.lista_footer{
+    font-family: Cairo, sans-serif;
+    font-size: 16px;
+    list-style: none;
+    padding: 0px;
+}
+
+/* Horários */
+#horarios{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+#Hfuncionamento{
+    color: rgb(177, 177, 177);
+}
+.espacamento_horarios{
+    margin-bottom: 5px;
+}
+
+/* Endereço */
+#lista_endereco{
+    color: white;
+    font-size: 16px;
+    font-family: Cairo, sans-serif;
+}
+.espacamento_endereco{
+    margin-top: 15px;
+}
+
+/* Contatos */
+#lista_contatos{
+    color: white;
+    font-size: 19px;
+    font-family: Cairo, sans-serif;
+}
+#lista_redes_sociais{
+    display: flex;
+    padding: 0px;
+}
+.espacamento_contato{
+    margin-right: 20px;
+    list-style: none;
+}
+#espacamento_contato{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}

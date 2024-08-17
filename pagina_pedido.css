@@ -1,0 +1,298 @@
+body{
+    margin: 0px;
+    font-family: Cairo, sans-serif;
+}
+
+#container_pagina_pedido{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'corpo'
+    'footer'
+    ;
+}
+
+/*Inicio do header*/
+/*------------------------------------------------------------------------------------------*/
+#header{
+    grid-area: header;    
+    background-color: #E4E2DD;
+    display: flex;
+    justify-content: space-between;
+}
+.caixa_itens_navbar{
+    background-color: black;
+    border-radius: 100px;
+    color: white;
+    width: 120px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-family:  Cairo, sans-serif;
+    margin-right: 100px;
+}
+#nav-bar{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#bussula{
+    margin-right: 10px;
+}
+a{
+  color: white;  
+}
+a:visited{
+    color: white;
+}
+
+/* Fim do header */
+
+/*------------------------------------------------------------------------------------------*/
+
+/* Config do Container dos Pedidos */
+
+#container_pedidos{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+/* Inicio da legenda */
+
+#legenda_pedido{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+#barra_legenda{
+    width: 80%;
+    height: 80px;
+    background-color: #E4E2DD;
+    display: flex;
+}
+#vazio_legenda{
+    width: 30%;
+    height: 100%;
+}
+#txt_legenda{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* Inicio do pedido */
+
+#pedido{
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.linha_pedido{
+    border-bottom: 3px solid #E4E2DD;
+    height: 330px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+.excluir{
+    border: 1px solid white;
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img_pedido{
+    margin-left: 130px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid gray;
+    background-image: url(Sobremesas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nome_pedido{
+    margin-left: 20px;
+    margin-bottom: 40px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+.preco_pedido{
+    margin-bottom: 20px;
+    margin-left: 105px;
+    color: white;
+    font-size: 11px;
+}
+.quantidade_pedido{
+    margin-bottom: 20px;
+    margin-left: 190px;
+    border: 1px solid white;
+    width: 90px;
+    height: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.total_produto{
+    margin-bottom: 20px;
+    margin-left: 180px;
+    color: white;
+    font-size: 11px;
+}
+#linha_pedido{
+    border-bottom: 20px solid #E4E2DD;
+    height: 330px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* Inicio do pagamento */
+
+#pagamento_pedido{
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+#caixa_pagamento{
+    border: 1px solid white;
+    width: 70%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+.setores{
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 20px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    height: 100%;
+}
+.espacamento_txtsetores{
+    font-size: 24px;
+    margin-bottom: 100px;
+}
+.divisoria{
+    width: 2px;
+    height: 90%;
+    background-color: #D9D9D9;
+}
+
+#finalizar_pedido{
+    margin-top: 100px;
+    width: 250px;
+    height: 50px;
+    border: 1px solid ;
+    background-color: black;
+    font-size: 24px;
+    color: white;
+}
+
+/* Fim da perte do pedido e pagamento */
+
+/*------------------------------------------------------------------------------------------*/
+
+/* Início do footer */
+
+
+#footer{
+    height: 220px;
+    grid-area: footer;
+    background-color: #494949;
+    display: grid;
+    grid-template-areas: 
+    'vazio_footer01 footer_esquerdo footer_meio footer_direito vazio_footer02'
+    ;
+}
+#footer_esquerdo{
+    grid-area: footer_esquerdo;
+    display: flex;
+    justify-content: end;
+}
+#footer_direito{
+    grid-area: footer_direito;
+    display: flex;
+    justify-content: start;
+}
+#footer_meio{
+    grid-area: footer_meio;
+    display: flex;
+    justify-content: center;
+}
+#vazio_footer01{
+    grid-area: vazio_footer01;
+    
+}
+#vazio_footer02{
+    grid-area: vazio_footer02;
+}
+
+.lista_footer{
+    font-family: Cairo, sans-serif;
+    font-size: 16px;
+    list-style: none;
+    padding: 0px;
+}
+
+/* Horários */
+#horarios{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+#Hfuncionamento{
+    color: rgb(177, 177, 177);
+}
+.espacamento_horarios{
+    margin-bottom: 5px;
+}
+
+/* Endereço */
+#lista_endereco{
+    color: white;
+    font-size: 16px;
+    font-family: Cairo, sans-serif;
+}
+.espacamento_endereco{
+    margin-top: 15px;
+}
+
+/* Contatos */
+#lista_contatos{
+    color: white;
+    font-size: 19px;
+    font-family: Cairo, sans-serif;
+}
+#lista_redes_sociais{
+    display: flex;
+    padding: 0px;
+}
+.espacamento_contato{
+    margin-right: 20px;
+    list-style: none;
+}
+#espacamento_contato{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}

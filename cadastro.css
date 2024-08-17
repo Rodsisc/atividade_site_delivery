@@ -1,0 +1,247 @@
+body{
+    margin: 0px;
+}
+
+#container_cadatro{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'cadastro'
+    'footer'
+    ;
+}
+
+/*Inicio do header*/
+/*------------------------------------------------------------------------------------------*/
+#header{
+    grid-area: header;    
+    background-color: #E4E2DD;
+    display: flex;
+    justify-content: space-between;
+}
+.caixa_itens_navbar{
+    background-color: black;
+    border-radius: 100px;
+    color: white;
+    width: 120px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-family:  Cairo, sans-serif;
+    margin-right: 100px;
+}
+#nav-bar{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#bussula{
+    margin-right: 10px;
+}
+a{
+  color: white;  
+}
+a:visited{
+    color: white;
+}
+
+/* Fim do header */
+
+/*------------------------------------------------------------------------------------------*/
+
+/* Início do cadastro/login */
+
+#login{
+    width: 100%;
+    height: 1500px;
+    background-image: url(fundo_cadastro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: cadastro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#caixa_login_cadastro{
+    border: 1px solid black;
+    color: white;
+    width: 650px;
+    height: 650px;
+    background-color: #E4E2DD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#faca_login_cadastro{
+    color: black;
+    font-size: 40px;
+    font-family: Cairo, sans-serif;
+}
+#como_deseja_cadastro{
+    color: gray;
+    font-size: 24px;
+    font-family: Cairo, sans-serif;
+    margin-bottom: 60px;
+}
+
+#continuar_facebook{
+    width: 500px;
+    height: 50px;
+    background-color: #3463AA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    font-family: Cairo, sans-serif;
+    margin-bottom: 30px;
+
+}
+
+#continuar_google{
+    width: 500px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 18px;
+    font-family: Cairo, sans-serif;
+    
+}
+
+#caixa_celular_email{
+    margin-top: 30px;
+    width: 500px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+#celular_cadastro{
+    width: 225px;
+    height: 100%;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    font-family: Cairo, sans-serif;
+}
+#email_cadastro{
+    width: 225px;
+    height: 100%;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    font-family: Cairo, sans-serif;
+    
+}
+
+#nao_possui_cadastro{
+    margin-top: 30px;
+    color: black;
+    font-size: 18px;
+    font-family: Cairo, sans-serif;
+}
+
+/* Fim da parte de cadastro/login */
+
+/*------------------------------------------------------------------------------------------*/
+
+/* Início do footer */
+
+
+#footer{
+    height: 220px;
+    grid-area: footer;
+    background-color: #494949;
+    display: grid;
+    grid-template-areas: 
+    'vazio_footer01 footer_esquerdo footer_meio footer_direito vazio_footer02'
+    ;
+}
+#footer_esquerdo{
+    grid-area: footer_esquerdo;
+    display: flex;
+    justify-content: end;
+}
+#footer_direito{
+    grid-area: footer_direito;
+    display: flex;
+    justify-content: start;
+}
+#footer_meio{
+    grid-area: footer_meio;
+    display: flex;
+    justify-content: center;
+}
+#vazio_footer01{
+    grid-area: vazio_footer01;
+    
+}
+#vazio_footer02{
+    grid-area: vazio_footer02;
+}
+
+.lista_footer{
+    font-family: Cairo, sans-serif;
+    font-size: 16px;
+    list-style: none;
+    padding: 0px;
+}
+
+/* Horários */
+#horarios{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+#Hfuncionamento{
+    color: rgb(177, 177, 177);
+}
+.espacamento_horarios{
+    margin-bottom: 5px;
+}
+
+/* Endereço */
+#lista_endereco{
+    color: white;
+    font-size: 16px;
+    font-family: Cairo, sans-serif;
+}
+.espacamento_endereco{
+    margin-top: 15px;
+}
+
+/* Contatos */
+#lista_contatos{
+    color: white;
+    font-size: 19px;
+    font-family: Cairo, sans-serif;
+}
+#lista_redes_sociais{
+    display: flex;
+    padding: 0px;
+}
+.espacamento_contato{
+    margin-right: 20px;
+    list-style: none;
+}
+#espacamento_contato{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}

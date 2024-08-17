@@ -1,0 +1,234 @@
+*{
+    margin: 0px;
+    font-family: Cairo, sans-serif;
+}
+
+#container_busca{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'busca'
+    'footer'
+    ;
+}
+
+/*Inicio do header*/
+/*------------------------------------------------------------------------------------------*/
+#header{
+    grid-area: header;    
+    background-color: #E4E2DD;
+    display: flex;
+    justify-content: space-between;
+}
+.caixa_itens_navbar{
+    background-color: black;
+    border-radius: 100px;
+    color: white;
+    width: 120px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-family:  Cairo, sans-serif;
+    margin-right: 100px;
+}
+#nav-bar{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#bussula{
+    margin-right: 10px;
+}
+a{
+  color: white;  
+}
+a:visited{
+    color: white;
+}
+
+/* Fim do header */
+
+/*------------------------------------------------------------------------------------------*/
+
+/* Início da parte do resultado da busca */
+
+
+#busca_e_sugestoes{
+    grid-area: busca;
+    display: grid;
+    grid-template-areas: 
+    'resultado'
+    'sugestoes'
+    ;
+    width: 100%;
+    height: 1600px;
+    background-color: black;
+}
+
+#resultado_busca{
+    grid-area: resultado;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sugestoes_busca{
+    grid-area: sugestoes;
+    height: 900px;
+}
+
+
+#barra_busca{
+    width: 40%;
+    height: 30px;
+    border: 1px solid white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+#input_buscar{
+    height: 82%;
+    width: 95%;
+    background-color: black;
+    border: none;
+    color: white;
+    margin-left: 10px;
+}
+p{
+    color: white;
+}
+#txt_procurava{
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+#img_resultado_produto{
+    border: 1px solid white;
+    margin-bottom: 10px;
+}
+#svg_buscar{
+    margin-left: 10px;
+}
+
+
+
+#sugestoes_busca{
+    display: flex;
+    flex-direction: column;
+}
+#experimente{
+    grid-area: experimente;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 36px;
+    margin-bottom: 70px;
+}
+#produtosl1{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 70px;
+}
+#produtosl2{
+    display: flex;
+    justify-content: space-around;
+}
+.produto01{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Fim da parte do resultado da busca */
+
+/*------------------------------------------------------------------------------------------*/
+
+/* Início do footer */
+
+
+#footer{
+    height: 220px;
+    grid-area: footer;
+    background-color: #494949;
+    display: grid;
+    grid-template-areas: 
+    'vazio_footer01 footer_esquerdo footer_meio footer_direito vazio_footer02'
+    ;
+}
+#footer_esquerdo{
+    grid-area: footer_esquerdo;
+    display: flex;
+    justify-content: end;
+}
+#footer_direito{
+    grid-area: footer_direito;
+    display: flex;
+    justify-content: start;
+}
+#footer_meio{
+    grid-area: footer_meio;
+    display: flex;
+    justify-content: center;
+}
+#vazio_footer01{
+    grid-area: vazio_footer01;
+    
+}
+#vazio_footer02{
+    grid-area: vazio_footer02;
+}
+
+.lista_footer{
+    font-family: Cairo, sans-serif;
+    font-size: 16px;
+    list-style: none;
+    padding: 0px;
+}
+
+/* Horários */
+#horarios{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+#Hfuncionamento{
+    color: rgb(177, 177, 177);
+}
+.espacamento_horarios{
+    margin-bottom: 5px;
+}
+
+/* Endereço */
+#lista_endereco{
+    color: white;
+    font-size: 16px;
+    font-family: Cairo, sans-serif;
+}
+.espacamento_endereco{
+    margin-top: 15px;
+}
+
+/* Contatos */
+#lista_contatos{
+    color: white;
+    font-size: 19px;
+    font-family: Cairo, sans-serif;
+}
+#lista_redes_sociais{
+    display: flex;
+    padding: 0px;
+}
+.espacamento_contato{
+    margin-right: 20px;
+    list-style: none;
+}
+#espacamento_contato{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
